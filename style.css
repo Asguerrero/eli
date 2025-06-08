@@ -1,0 +1,340 @@
+body{
+	margin: 0px;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.page-div{
+	display: grid;
+	grid-template-rows: 4% 92% 4%;
+	height:100vh;
+}
+
+.main-page-div{
+	background-color: #FDFAF1 ;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 15% 75% 10%;
+	justify-content: center;
+}
+.envelope-main-div{
+	display: grid;
+	grid-template-columns: 3% 94% 3%;
+}
+
+.envelope-border-x{
+	background-image: url("images/envelope-margin.png");
+	background-repeat: repeat-x;
+	height: 100%;
+}
+
+.envelope-border-y{
+	background-image: url("images/envelope-magin-y.png");
+	background-repeat: no-repeat;
+}
+
+.envelope-bottom{
+	display: grid;
+	align-items: end;
+}
+
+.letter-main-div{
+	display: grid;
+	grid-template-columns: 49% 2% 49%;
+	background-color: #FDFAF1;
+}
+
+.separator{
+	background-color: #e3b1b3;
+    height: 80%;
+    width: 25%;
+}
+.cake{
+	background-image: url(images/cake.png);
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    background-position: center;
+}
+.separator-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.div2{
+	display: grid;
+	grid-template-rows: 18% 10% 10% 30% 20%;
+}
+
+.sello img{
+	height: 100%;
+	margin-right: 5%;
+}
+
+.button{
+	background-color: #D996A3;
+	font-family:  "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+    border: none;
+	width: 8rem;
+    height: 3rem;
+	border-radius: 4px;
+	transition: all .2s ease-in-out; 
+}
+
+.button:hover { 
+	transform: scale(1.1); 
+  }
+.text-index{
+	font-family: "Edu NSW ACT Cursive";
+	font-size: 1.6rem;
+	margin-left: 10%;
+}
+
+.title1{
+	font-family: "Edu NSW ACT Cursive";
+	font-weight: 400;
+
+}
+
+.pop-up-container{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(0deg 0% 100% / 76%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-div{
+	background-image: url(images/old-paper.jpg);
+	background-size: cover;
+    height: 75%;
+    width: 60%;
+}
+
+.letter-div{
+	margin-top: 6%;
+	margin-left: 10%;
+
+}
+
+.start-button{
+	width: 20%;
+}
+
+.index-pop-up{
+	display: grid;
+	grid-template-rows: 80% 20%;
+}
+
+.hidden{
+	display: none;
+}
+
+
+.flex-justify{
+	display: flex;
+	justify-content: center;
+
+}
+.farm-middle-container{
+	width: 100vw;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+.hearts-div{
+	background-color: #D99AAB;
+	border-radius: 30px 1px 1px 30px;
+}
+
+progress[value] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 60%;
+	height: 25px;
+  }
+
+  progress[value]::-webkit-progress-bar {
+	background-color: rgb(226, 220, 220);
+	border-radius: 2px;
+	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; */
+  }
+
+  progress[value]::-webkit-progress-value {
+		background-image:-webkit-linear-gradient(-45deg, 
+		transparent 33%, rgba(0, 0, 0, .1) 33%, 
+		rgba(0,0, 0, .1) 66%, transparent 66%),
+-webkit-linear-gradient(top, 
+		rgba(255, 255, 255, .25), 
+		rgba(0, 0, 0, .25)),
+-webkit-linear-gradient(left, rgb(201, 128, 183), rgb(113, 84, 151));
+
+  
+	  border-radius: 5px; 
+	  /* background-size: 35px 20px, 100% 100%, 100% 100%; */
+}
+
+.garden-div{
+	width: 110vh;
+	height: 55vh;
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	grid-template-rows: repeat(3, auto);
+	margin-left: 10%;
+	margin-top: 4%;
+}
+
+.garden-container{
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.plot{
+	/* border: 1px solid black; */
+	background-image: url(images/dirt.svg);
+	box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
+
+.plot1{
+	border-radius: 15px 1px 1px;
+}
+
+.plot11{
+	border-radius: 1px 1px 1px 15px;
+}
+
+.plot5{
+	border-radius: 1px 10px 1px 1px;
+}
+
+.plot15{
+	border-radius: 1px 1px 10px 1px;
+}
+.tool1{
+	background-image: url(images/sprout.png);
+	background-size: cover;
+}
+
+.tool2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ferti{
+	background-image: url(images/fertilizer.png);
+	background-size: cover;
+	height: 85%;
+	width: 85%;
+}
+
+.basket{
+	background-image: url(images/basket.png);
+	background-size: cover;
+	height: 82%;
+	width: 82%;
+}
+
+.tool3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.trivia-container-main{
+	display: flex;
+	justify-content: center;
+}
+
+.trivia-div{
+	width: 55%;
+	margin-left: 16%;
+}
+
+.question-score-div{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.options-div{
+	display: grid;
+    grid-template-columns: 50% 50%;
+	grid-row-gap: 34px;
+	margin-top: 4%;
+}
+.option{
+	background-color: #D99AAB;
+    width: 80%;
+    border-radius: 6px;
+    padding: 10px 1px;
+}
+
+.optionB{
+	margin-left: 20%;
+}
+
+.optionD{
+	margin-left: 20%;
+}
+
+.note{
+	display: flex;
+	justify-content: center;
+}
+
+.note-img{
+	width: 50%;
+	transition: all .2s ease-in-out; 
+}
+
+.note-img:hover { 
+	transform: scale(1.1); 
+  }
+
+.notes-div{
+	height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.board{
+	background-color: white;
+	width: 80%;
+	height: 60vh;
+	border: solid;
+	border-radius: 8px;
+}
+
+.drawing-container-main{
+	display: flex;
+	justify-content: center;
+}
+
+.random-div{
+	width: 70%;
+    display: flex;
+	justify-content: center;
+	margin-left: 17%;
+	margin-top: 2%;
+}
+
+.picture-canvas{
+	margin-left: 3%;
+}
