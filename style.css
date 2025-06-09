@@ -192,16 +192,16 @@ progress[value] {
 	width: 110vh;
 	height: 55vh;
 	display: grid;
-	grid-template-columns: repeat(6, auto);
-	grid-template-rows: repeat(3, auto);
+	grid-template-columns: 16% 16% 16% 16% 16% 16% 4%;
+	grid-template-rows: 33% 33% 33%;
 	margin-left: 10%;
-	margin-top: 4%;
+	margin-top: 6%;
 }
 
 .garden-container{
-	display: flex;
-	justify-content: center;
-	/* align-items: center; */
+	display: grid;
+    grid-template-rows: 85% 15%;
+    justify-content: center;
 }
 
 .plot{
@@ -225,12 +225,12 @@ progress[value] {
 .plot15{
 	border-radius: 1px 1px 10px 1px;
 }
-.tool1{
+.plant-tool{
 	background-image: url(images/sprout.png);
 	background-size: cover;
 }
 
-.tool2{
+.fertilizer-tool{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -250,7 +250,7 @@ progress[value] {
 	width: 82%;
 }
 
-.tool3{
+.collect-tool{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -337,4 +337,33 @@ progress[value] {
 
 .picture-canvas{
 	margin-left: 3%;
+}
+
+.score{
+	display: grid;
+    justify-content: right;
+    align-content: flex-end;
+}
+
+.score p{
+	margin-bottom: 24%;
+}
+
+.tool-border{
+	border-top: #D99AAB 4px solid;
+    border-left: #D99AAB 4px solid;
+	border-bottom: #D99AAB 4px solid;
+	border-radius: 10px 1px 1px 10px;
+}
+
+.score-border{
+	border-top: #D99AAB 4px solid;
+	border-right: #D99AAB 4px solid;
+	border-bottom: #D99AAB 4px solid;
+	padding-right: 10%;
+	border-radius: 1px 10px 10px 1px;
+}
+
+.carrot{
+	width: 100%;
 }
