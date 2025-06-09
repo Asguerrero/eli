@@ -159,6 +159,7 @@ body{
 .hearts-div{
 	background-color: #D99AAB;
 	border-radius: 30px 1px 1px 30px;
+	width: 100%;
 }
 
 progress[value] {
@@ -208,6 +209,9 @@ progress[value] {
 	/* border: 1px solid black; */
 	background-image: url(images/dirt.svg);
 	box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
+.plot-fertilized{
+	background-image: url(images/dark-dirt.svg);
 }
 
 .plot1{
@@ -300,6 +304,7 @@ progress[value] {
 
 .note-img{
 	width: 50%;
+	height: fit-content;
 	transition: all .2s ease-in-out; 
 }
 
@@ -309,9 +314,9 @@ progress[value] {
 
 .notes-div{
 	height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
+	grid-template-rows: 33% 33% 33%;
+	grid-row-gap: 4%;
 }
 
 .board{
@@ -366,4 +371,11 @@ progress[value] {
 
 .carrot{
 	width: 100%;
+}
+
+.notes-container{
+	display: grid;
+	grid-template-rows: 87% 13%;
+	justify-items: center;
+	align-content: center;
 }
