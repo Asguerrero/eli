@@ -492,3 +492,17 @@ margin-bottom: 8px;
 .incorrect-answer{
 	background-color:#ed7777;
 }
+
+.final-random-div{
+	display: grid;
+	grid-template-columns: 37% 28% 37%;
+	justify-items: center;
+    align-content: center;
+}
+
+.final-random-div img{
+	width: 20%;
+    height: fit-content;
+    transition: all .2s ease-in-out;
+    margin-bottom: 5px;
+}
