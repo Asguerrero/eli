@@ -45,11 +45,13 @@ $(".option").on("click", function(event){
     if (answer_number == correct_answers[current_question - 1]){
         $(event.currentTarget).addClass("correct-answer");
         total_correct_answers = total_correct_answers +1; 
+        display_note(total_correct_answers + 6);
     }
     else{
         $(event.currentTarget).addClass("incorrect-answer")
     }
     update_score();
+    update_progress_bar(1);
     setTimeout(() => { 
         $(event.currentTarget).removeClass("correct-answer");
         $(event.currentTarget).removeClass("incorrect-answer");
@@ -60,6 +62,9 @@ $(".option").on("click", function(event){
 
 function update_score(){
     $(".trivia-score").text(`Score: ${total_correct_answers}/${current_question}`);
+    if(total_correct_answers >= 3 && current_question == 6){
+        $(".next-button").removeClass("hidden");
+    }
 }
 
 
