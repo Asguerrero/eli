@@ -480,3 +480,15 @@ margin-bottom: 8px;
 	background-color: black;
 	
 }
+
+.option p{
+	margin-left: 9%;
+}
+
+.correct-answer{
+	background-color: #a6d8a6;
+}
+
+.incorrect-answer{
+	background-color:#ed7777;
+}
